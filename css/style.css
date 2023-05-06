@@ -41,7 +41,7 @@ main {
 	left: 50%;
 	transform: translate(-50%, -50%);
 
-	height: 70vh;
+	height: 80vh;
 	width: 60vw;
 
 	border-radius: 50px;
@@ -53,7 +53,10 @@ main {
 section#formulario {
 	width: 55%;
 	margin: 2em;
-	border: 1px solid #fff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 section#formulario h1 {
@@ -82,28 +85,18 @@ section#formulario div#form_header div#icons i {
 
 section#formulario div#form_header p {
 	text-align: center;
-	margin-bottom: 2em;
+    
 }
 
 section#formulario div#form_header div#icons i:hover {
 	color: #87b56b;
 }
 
-section#formulario div#footer p {
-	margin-top: 2em;
-}
+section#formulario p#footer {
+    color: #212121;
 
-section#imagem {
-	width: 45%;
-	border-radius: 0px 50px 50px 0px;
-}
-
-section#imagem img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
-    border-radius: 0px 50px 50px 0px;
+    display: flex;
+    align-self: center;
 }
 
 form {
@@ -113,13 +106,35 @@ form {
 
 label {
 	color: #183851aa;
+
 	margin-bottom: 0.5em;
 	padding-left: 1.2em;
 }
 
+.termo {
+    display: flex;
+    gap: 0.5em;
+    align-items: center;
+
+    font-size: 0.8em;
+}
+
+a {
+    color: #183851;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #87b56b;
+    font-weight: 600;
+}
+
+
 input {
 	padding: 1.2em;
-	margin-bottom: 2em;
+	margin-bottom: 1em;
 	background-color: #ddd;
 
 	border: none;
@@ -128,12 +143,18 @@ input {
 	color: #656565;
 }
 
+input#termo {
+    margin: 0;
+}
+
 button {
 	background-color: #183851;
     
     color: #fff;
     font-size: 1.2em;
 	font-weight: 600;
+
+    margin-top: 1em;
 
 	width: 6em;
 	height: 2.5em;
@@ -151,4 +172,18 @@ button {
 
 button:hover {
     background-color: #87b56b;
+}
+
+
+section#imagem {
+	width: 45%;
+	border-radius: 0px 50px 50px 0px;
+}
+
+section#imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    border-radius: 0px 50px 50px 0px;
 }

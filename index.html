@@ -36,20 +36,38 @@
 
 					<form action="post">
 						<label for="nome">Usuário</label>
-						<input type="text" placeholder="Digite seu usuário" tabindex="1"/>
-						<label for="nome">Senha</label>
-						<input type="password" placeholder="Digite sua senha" tabindex="2"/>
-					
-                        <button>Login</button>
-                    </form>
+						<input
+							type="text"
+							id="nome"
+							placeholder="Digite seu usuário"
+							tabindex="1"
+						/>
+						<label for="senha">Senha</label>
+						<input
+							type="password"
+							id="senha"
+							placeholder="Digite sua senha"
+							tabindex="2"
+						/>
+						<label for="termo" class="termo">
+							<input type="checkbox" id="termo" />
+                           <p>Aceito os <a href="https://google.com" target="_blank">Termos de uso</a> do site</p>
+						</label>
 
-					<div id="footer">
-						<p>©TechPlan ltda.</p>
-                    </div>
+						<button>Login</button>
+					</form>
+
+					<!-- <div id="footer"> -->
+						<!-- <p>©TechPlan ltda.</p> -->
+					<!-- </div> -->
+                    <p id="footer">©TechPlan ltda.</p>
 				</section>
 
 				<section id="imagem">
-					<img src="assets/quarto.jpg" alt="">
+					<img
+						src="assets/quarto.jpg"
+						alt="Imagem de uma sala modelada em 3D, com um computador em uma mesa, estantes com livros e plantas."
+					/>
 				</section>
 			</main>
 		</div>
